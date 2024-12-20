@@ -1,0 +1,21 @@
+@prefix cmns-org: <https://www.omg.org/spec/Commons/Organizations/> .
+@prefix idmp-sub: <https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+
+<https://id.accurids.com/fds/HumanBiosample>
+        rdf:type         owl:Class;
+        rdfs:label       "Human Biosample";
+        rdfs:subClassOf  idmp-sub:Material .
+
+<https://id.accurids.com/fds/Patient>
+        rdf:type         owl:Class;
+        rdfs:label       "Patient";
+        rdfs:subClassOf  cmns-org:LegalPerson .
+
+<https://id.accurids.com/fds/HumanBiosampleType>
+        rdf:type        owl:Class;
+        skos:prefLabel  "Human Biosample Type" .

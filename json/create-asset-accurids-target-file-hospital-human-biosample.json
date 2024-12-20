@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+  },
+  "@id": "hospitalHumanBiosampleFile",
+  "properties": {
+    "name": "Target file endpoint",
+    "contenttype": "application/json"
+  },
+  "dataAddress": {
+    "type": "HttpData",
+    "name": "accurids-target-file",
+    "baseUrl": "https://pharma.accurids.com/config/datasets/hospital-1-human-biosample/files",
+    "proxyPath": "true",
+    "proxyMethod": "true",
+    "proxyBody": "true",
+    "proxyQueryParams": "true",
+    "authKey": "ApiKey",
+    "authCode": "{{APIKEY}}",
+    "method": "POST"
+  }
+}

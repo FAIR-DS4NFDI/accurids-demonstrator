@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+  },
+  "@id": "pharmaReferenceDataFile",
+  "properties": {
+    "name": "Target file endpoint",
+    "contenttype": "application/json"
+  },
+  "dataAddress": {
+    "type": "HttpData",
+    "name": "accurids-target-file",
+    "baseUrl": "https://hospital.accurids.com/config/datasets/reference-data/files",
+    "proxyPath": "true",
+    "proxyMethod": "true",
+    "proxyBody": "true",
+    "proxyQueryParams": "true",
+    "authKey": "ApiKey",
+    "authCode": "{{APIKEY}}",
+    "method": "POST"
+  }
+}

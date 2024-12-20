@@ -1,0 +1,122 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://id.hospital.accurids.com/3/1>
+        rdf:type                        <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/birthDate>   "1990-04-15";
+        <http://schema.org/deathDate>   "";
+        <http://schema.org/familyName>  "Müller";
+        <http://schema.org/gender>      "Male";
+        <http://schema.org/givenName>   "Lukas";
+        <http://schema.org/homeLocation>
+                "Köln, Deutschland";
+        <http://schema.org/nationality>
+                "German" .
+
+<https://id.hospital.accurids.com/3/2>
+        rdf:type                        <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/birthDate>   "1985-08-20";
+        <http://schema.org/deathDate>   "";
+        <http://schema.org/familyName>  "Schneider";
+        <http://schema.org/gender>      "Female";
+        <http://schema.org/givenName>   "Marie";
+        <http://schema.org/homeLocation>
+                "Bonn, Deutschland";
+        <http://schema.org/nationality>
+                "German" .
+
+<https://id.hospital.accurids.com/3/3>
+        rdf:type                        <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/birthDate>   "1975-03-10";
+        <http://schema.org/deathDate>   "2024-12-01";
+        <http://schema.org/familyName>  "Weber";
+        <http://schema.org/gender>      "Male";
+        <http://schema.org/givenName>   "Sebastian";
+        <http://schema.org/homeLocation>
+                "Leverkusen, Deutschland";
+        <http://schema.org/nationality>
+                "German" .
+
+<https://id.hospital.accurids.com/3/4>
+        rdf:type                        <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/birthDate>   "1993-07-05";
+        <http://schema.org/deathDate>   "";
+        <http://schema.org/familyName>  "Hoffmann";
+        <http://schema.org/gender>      "Female";
+        <http://schema.org/givenName>   "Anna";
+        <http://schema.org/homeLocation>
+                "Köln, Deutschland";
+        <http://schema.org/nationality>
+                "German" .
+
+<https://id.hospital.accurids.com/3/5>
+        rdf:type                        <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/birthDate>   "1988-02-18";
+        <http://schema.org/deathDate>   "";
+        <http://schema.org/familyName>  "Schulz";
+        <http://schema.org/gender>      "Male";
+        <http://schema.org/givenName>   "Tom";
+        <http://schema.org/homeLocation>
+                "Düsseldorf, Deutschland";
+        <http://schema.org/nationality>
+                "German" .
+
+<https://id.hospital.accurids.com/3/6>
+        rdf:type                        <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/birthDate>   "2000-06-12";
+        <http://schema.org/deathDate>   "";
+        <http://schema.org/familyName>  "Kaiser";
+        <http://schema.org/gender>      "Female";
+        <http://schema.org/givenName>   "Elena";
+        <http://schema.org/homeLocation>
+                "Köln, Deutschland";
+        <http://schema.org/nationality>
+                "German" .
+
+<https://id.hospital.accurids.com/3/7>
+        rdf:type                        <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/birthDate>   "1991-11-03";
+        <http://schema.org/deathDate>   "";
+        <http://schema.org/familyName>  "Fischer";
+        <http://schema.org/gender>      "Male";
+        <http://schema.org/givenName>   "Paul";
+        <http://schema.org/homeLocation>
+                "Aachen, Deutschland";
+        <http://schema.org/nationality>
+                "Dutch" .
+
+<https://id.hospital.accurids.com/3/8>
+        rdf:type                        <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/birthDate>   "1982-09-25";
+        <http://schema.org/deathDate>   "";
+        <http://schema.org/familyName>  "Berger";
+        <http://schema.org/gender>      "Female";
+        <http://schema.org/givenName>   "Sophie";
+        <http://schema.org/homeLocation>
+                "Köln, Deutschland";
+        <http://schema.org/nationality>
+                "French" .
+
+<https://id.hospital.accurids.com/3/9>
+        rdf:type                        <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/birthDate>   "1998-05-22";
+        <http://schema.org/deathDate>   "";
+        <http://schema.org/familyName>  "Wolf";
+        <http://schema.org/gender>      "Male";
+        <http://schema.org/givenName>   "Jonas";
+        <http://schema.org/homeLocation>
+                "Frechen, Deutschland";
+        <http://schema.org/nationality>
+                "German" .
+
+<https://id.hospital.accurids.com/3/10>
+        rdf:type                        <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/birthDate>   "1995-10-14";
+        <http://schema.org/deathDate>   "";
+        <http://schema.org/familyName>  "Becker";
+        <http://schema.org/gender>      "Female";
+        <http://schema.org/givenName>   "Clara";
+        <http://schema.org/homeLocation>
+                "Köln, Deutschland";
+        <http://schema.org/nationality>
+                "German" .

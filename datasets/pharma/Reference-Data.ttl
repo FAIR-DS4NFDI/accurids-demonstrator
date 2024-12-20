@@ -1,0 +1,83 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<https://id.accurids.com/fds/HumanBiosampleType/1>
+        rdf:type    <https://id.accurids.com/fds/HumanBiosampleType>;
+        rdfs:label  "Blood" .
+
+<https://id.accurids.com/fds/HumanBiosampleType/2>
+        rdf:type    <https://id.accurids.com/fds/HumanBiosampleType>;
+        rdfs:label  "Urine" .
+
+<https://id.accurids.com/fds/HumanBiosampleType/3>
+        rdf:type    <https://id.accurids.com/fds/HumanBiosampleType>;
+        rdfs:label  "Stool" .
+
+<https://id.accurids.com/fds/HumanBiosampleType/4>
+        rdf:type    <https://id.accurids.com/fds/HumanBiosampleType>;
+        rdfs:label  "Tissue" .
+
+<https://id.accurids.com/fds/HumanBiosampleType/5>
+        rdf:type    <https://id.accurids.com/fds/HumanBiosampleType>;
+        rdfs:label  "Cells" .
+
+<https://id.accurids.com/fds/HumanBiosampleType/6>
+        rdf:type    <https://id.accurids.com/fds/HumanBiosampleType>;
+        rdfs:label  "Saliva" .
+
+<https://id.accurids.com/fds/HumanBiosampleType/7>
+        rdf:type    <https://id.accurids.com/fds/HumanBiosampleType>;
+        rdfs:label  "Swabs" .
+
+<https://id.accurids.com/fds/HumanBiosampleType/8>
+        rdf:type    <https://id.accurids.com/fds/HumanBiosampleType>;
+        rdfs:label  "DNA" .
+
+<https://id.accurids.com/fds/TrialStatus/1>
+        rdf:type    <https://id.accurids.com/fds/TrialStatus>;
+        rdfs:label  "Active" .
+
+<https://id.accurids.com/fds/TrialStatus/2>
+        rdf:type    <https://id.accurids.com/fds/TrialStatus>;
+        rdfs:label  "Inactive" .
+
+<https://id.accurids.com/fds/TrialPhase/1>
+        rdf:type      <https://id.accurids.com/fds/TrialPhase>;
+        rdfs:comment  "Testing is conducted in laboratories and on animals to evaluate the safety and biological activity of a new drug before human trials.";
+        rdfs:label    "Preclinical" .
+
+<https://id.accurids.com/fds/TrialPhase/2>
+        rdf:type      <https://id.accurids.com/fds/TrialPhase>;
+        rdfs:comment  "Exploratory, first-in-human trials involving very small doses in a few individuals to assess pharmacokinetics and pharmacodynamics.";
+        rdfs:label    "0" .
+
+<https://id.accurids.com/fds/TrialPhase/3>
+        rdf:type      <https://id.accurids.com/fds/TrialPhase>;
+        rdfs:comment  "Initial trials in a small group of healthy volunteers (or patients for some diseases) to test safety, dosage ranges, and side effects.";
+        rdfs:label    "I" .
+
+<https://id.accurids.com/fds/TrialPhase/4>
+        rdf:type      <https://id.accurids.com/fds/TrialPhase>;
+        rdfs:comment  "Trial in a smaller group to evaluate efficacy.";
+        rdfs:label    "II" .
+
+<https://id.accurids.com/fds/TrialPhase/5>
+        rdf:type      <https://id.accurids.com/fds/TrialPhase>;
+        rdfs:comment  "Large-scale trials in diverse populations to confirm efficacy, monitor side effects, and compare the new treatment with standard therapies.";
+        rdfs:label    "III" .
+
+<https://id.accurids.com/fds/TrialPhase/6>
+        rdf:type      <https://id.accurids.com/fds/TrialPhase>;
+        rdfs:comment  "Post-Marketing: Studies conducted after approval to gather additional data on long-term safety, effectiveness, and optimal use.";
+        rdfs:label    "IV" .
+
+<https://id.accurids.com/fds/TrialPhase/7>
+        rdf:type      <https://id.accurids.com/fds/TrialPhase>;
+        rdfs:comment  "Preliminary trials in a small group of patients to evaluate efficacy and gather additional safety data.";
+        rdfs:label    "IIa" .
+
+<https://id.accurids.com/fds/TrialPhase/8>
+        rdf:type      <https://id.accurids.com/fds/TrialPhase>;
+        rdfs:comment  "Focused trials in a larger group of patients to determine the optimal dose and further confirm efficacy.";
+        rdfs:label    "IIb" .

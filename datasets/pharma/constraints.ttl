@@ -1,0 +1,259 @@
+@prefix cmns-dt:   <https://www.omg.org/spec/Commons/DatesAndTimes/> .
+@prefix cmns-loc:  <https://www.omg.org/spec/Commons/Locations/> .
+@prefix cmns-org:  <https://www.omg.org/spec/Commons/Organizations/> .
+@prefix idmp-mprd: <https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11615-MedicinalProducts/> .
+@prefix idmp-sub:  <https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/> .
+@prefix lcc-cr:    <https://www.omg.org/spec/LCC/Countries/CountryRepresentation/> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+<https://accurids.com/constraint/HumanBiosampleShape>
+        rdf:type    <http://www.w3.org/ns/shacl#NodeShape>;
+        rdfs:label  "Human Biosample Shape";
+        <http://www.w3.org/ns/shacl#description>
+                "Constraints for Human Biosample";
+        <http://www.w3.org/ns/shacl#name>
+                "Human Biosample Shape";
+        <http://www.w3.org/ns/shacl#property>
+                <https://accurids.com/constraint/HumanBiosampleShape-HasBarcodeShape> , <https://accurids.com/constraint/HumanBiosampleShape-HasClinicalTrialShape> , <https://accurids.com/constraint/HumanBiosampleShape-HasTrialSiteShape> , <https://accurids.com/constraint/HumanBiosampleShape-HasObservedDateTimeShape> , <https://accurids.com/constraint/HumanBiosampleShape-HasBiosampleTypeShape> , <https://accurids.com/constraint/HumanBiosampleShape-HasPatientShape>;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <https://id.accurids.com/fds/HumanBiosample> .
+
+<https://accurids.com/constraint/HumanBiosampleShape-HasBarcodeShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#datatype>
+                xsd:string;
+        <http://www.w3.org/ns/shacl#description>
+                "Barcode";
+        <http://www.w3.org/ns/shacl#minCount>
+                1;
+        <http://www.w3.org/ns/shacl#name>
+                "Barcode";
+        <http://www.w3.org/ns/shacl#path>
+                <https://id.accurids.com/fds/hasBarcode> .
+
+<https://accurids.com/constraint/HumanBiosampleShape-HasClinicalTrialShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#class>
+                <https://id.accurids.com/fds/ClinicalTrial>;
+        <http://www.w3.org/ns/shacl#description>
+                "Clinical Trial";
+        <http://www.w3.org/ns/shacl#minCount>
+                1;
+        <http://www.w3.org/ns/shacl#name>
+                "Clinical Trial";
+        <http://www.w3.org/ns/shacl#path>
+                <https://id.accurids.com/fds/hasClinicalTrial> .
+
+<https://accurids.com/constraint/HumanBiosampleShape-HasTrialSiteShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#class>
+                cmns-org:LegalEntity;
+        <http://www.w3.org/ns/shacl#description>
+                "Site";
+        <http://www.w3.org/ns/shacl#name>
+                "Site";
+        <http://www.w3.org/ns/shacl#path>
+                <https://id.accurids.com/fds/hasTrialSite> .
+
+<https://accurids.com/constraint/HumanBiosampleShape-HasObservedDateTimeShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#datatype>
+                xsd:string;
+        <http://www.w3.org/ns/shacl#description>
+                "Date / Time";
+        <http://www.w3.org/ns/shacl#name>
+                "Date / Time";
+        <http://www.w3.org/ns/shacl#path>
+                cmns-dt:hasObservedDateTime .
+
+<https://accurids.com/constraint/HumanBiosampleShape-HasBiosampleTypeShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#class>
+                <https://id.accurids.com/fds/HumanBiosampleType>;
+        <http://www.w3.org/ns/shacl#description>
+                "Biosample Type";
+        <http://www.w3.org/ns/shacl#name>
+                "Biosample Type";
+        <http://www.w3.org/ns/shacl#path>
+                <https://id.accurids.com/fds/hasBiosampleType> .
+
+<https://accurids.com/constraint/HumanBiosampleShape-HasPatientShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#class>
+                <https://id.accurids.com/fds/Patient>;
+        <http://www.w3.org/ns/shacl#description>
+                "Patient";
+        <http://www.w3.org/ns/shacl#name>
+                "Patient";
+        <http://www.w3.org/ns/shacl#path>
+                <https://id.accurids.com/fds/hasPatient> .
+
+<https://accurids.com/constraint/ClinicalTrialShape>
+        rdf:type    <http://www.w3.org/ns/shacl#NodeShape>;
+        rdfs:label  "Clinical Trial Shape";
+        <http://www.w3.org/ns/shacl#description>
+                "Constraints for Clinical Trial";
+        <http://www.w3.org/ns/shacl#name>
+                "Clinical Trial Shape";
+        <http://www.w3.org/ns/shacl#property>
+                <https://accurids.com/constraint/ClinicalTrialShape-LabelShape> , <https://accurids.com/constraint/ClinicalTrialShape-HasCountryShape> , <https://accurids.com/constraint/ClinicalTrialShape-HasTherapeuticIndicationShape> , <https://accurids.com/constraint/ClinicalTrialShape-HasStatusShape> , <https://accurids.com/constraint/ClinicalTrialShape-HasPhaseShape> , <https://accurids.com/constraint/ClinicalTrialShape-HasTrialSiteShape> , <https://accurids.com/constraint/ClinicalTrialShape-HasPatientShape>;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <https://id.accurids.com/fds/ClinicalTrial> .
+
+<https://accurids.com/constraint/ClinicalTrialShape-LabelShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#datatype>
+                xsd:string;
+        <http://www.w3.org/ns/shacl#description>
+                "Trial Number";
+        <http://www.w3.org/ns/shacl#minCount>
+                1;
+        <http://www.w3.org/ns/shacl#name>
+                "Trial Number";
+        <http://www.w3.org/ns/shacl#path>
+                rdfs:label .
+
+<https://accurids.com/constraint/ClinicalTrialShape-HasCountryShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#class>
+                lcc-cr:Country;
+        <http://www.w3.org/ns/shacl#description>
+                "Country";
+        <http://www.w3.org/ns/shacl#minCount>
+                1;
+        <http://www.w3.org/ns/shacl#name>
+                "Country";
+        <http://www.w3.org/ns/shacl#path>
+                cmns-loc:hasCountry .
+
+<https://accurids.com/constraint/ClinicalTrialShape-HasTherapeuticIndicationShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#datatype>
+                xsd:string;
+        <http://www.w3.org/ns/shacl#description>
+                "Therapeutic Indication";
+        <http://www.w3.org/ns/shacl#minCount>
+                1;
+        <http://www.w3.org/ns/shacl#name>
+                "Therapeutic Indication";
+        <http://www.w3.org/ns/shacl#path>
+                idmp-mprd:hasTherapeuticIndication .
+
+<https://accurids.com/constraint/ClinicalTrialShape-HasStatusShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#class>
+                <https://id.accurids.com/fds/TrialStatus>;
+        <http://www.w3.org/ns/shacl#description>
+                "Status";
+        <http://www.w3.org/ns/shacl#minCount>
+                1;
+        <http://www.w3.org/ns/shacl#name>
+                "Status";
+        <http://www.w3.org/ns/shacl#path>
+                <https://id.accurids.com/fds/hasStatus> .
+
+<https://accurids.com/constraint/ClinicalTrialShape-HasPhaseShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#class>
+                <https://id.accurids.com/fds/TrialPhase>;
+        <http://www.w3.org/ns/shacl#description>
+                "Phase";
+        <http://www.w3.org/ns/shacl#minCount>
+                1;
+        <http://www.w3.org/ns/shacl#name>
+                "Phase";
+        <http://www.w3.org/ns/shacl#path>
+                <https://id.accurids.com/fds/hasPhase> .
+
+<https://accurids.com/constraint/ClinicalTrialShape-HasTrialSiteShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#class>
+                cmns-org:LegalEntity;
+        <http://www.w3.org/ns/shacl#description>
+                "Site";
+        <http://www.w3.org/ns/shacl#name>
+                "Site";
+        <http://www.w3.org/ns/shacl#path>
+                <https://id.accurids.com/fds/hasTrialSite> .
+
+<https://accurids.com/constraint/ClinicalTrialShape-HasPatientShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#class>
+                <https://id.accurids.com/fds/Patient>;
+        <http://www.w3.org/ns/shacl#description>
+                "Patients";
+        <http://www.w3.org/ns/shacl#name>
+                "Patients";
+        <http://www.w3.org/ns/shacl#path>
+                <https://id.accurids.com/fds/hasPatient> .
+
+<https://accurids.com/constraint/PlasmidShape>
+        rdf:type    <http://www.w3.org/ns/shacl#NodeShape>;
+        rdfs:label  "Plasmid Shape";
+        <http://www.w3.org/ns/shacl#description>
+                "Constraints for Plasmid Shape";
+        <http://www.w3.org/ns/shacl#name>
+                "Plasmid Shape";
+        <http://www.w3.org/ns/shacl#property>
+                <https://accurids.com/constraint/PlasmidShape-HasNucleotideSequenceShape> , <https://accurids.com/constraint/PlasmidShape-CommentShape> , <https://accurids.com/constraint/PlasmidShape-LabelShape> , <https://accurids.com/constraint/PlasmidShape-HasPlasmidSizeShape> , <https://accurids.com/constraint/PlasmidShape-hasSequenceLengthShape>;
+        <http://www.w3.org/ns/shacl#targetClass>
+                <https://id.accurids.com/fds/Plasmid> .
+
+<https://accurids.com/constraint/PlasmidShape-HasNucleotideSequenceShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#datatype>
+                xsd:string;
+        <http://www.w3.org/ns/shacl#description>
+                "Nucleotid Sequence";
+        <http://www.w3.org/ns/shacl#minCount>
+                1;
+        <http://www.w3.org/ns/shacl#name>
+                "Nucleotid Sequence";
+        <http://www.w3.org/ns/shacl#path>
+                idmp-sub:hasNucleotideSequence .
+
+<https://accurids.com/constraint/PlasmidShape-CommentShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#datatype>
+                xsd:string;
+        <http://www.w3.org/ns/shacl#description>
+                "Comment";
+        <http://www.w3.org/ns/shacl#name>
+                "Comment";
+        <http://www.w3.org/ns/shacl#path>
+                rdfs:comment .
+
+<https://accurids.com/constraint/PlasmidShape-LabelShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#datatype>
+                xsd:string;
+        <http://www.w3.org/ns/shacl#description>
+                "Identifier";
+        <http://www.w3.org/ns/shacl#name>
+                "Identifier";
+        <http://www.w3.org/ns/shacl#path>
+                rdfs:label .
+
+<https://accurids.com/constraint/PlasmidShape-HasPlasmidSizeShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#datatype>
+                xsd:string;
+        <http://www.w3.org/ns/shacl#description>
+                "Plasmid size";
+        <http://www.w3.org/ns/shacl#name>
+                "Plasmid size";
+        <http://www.w3.org/ns/shacl#path>
+                <https://id.accurids.com/fds/hasPlasmidSize> .
+
+<https://accurids.com/constraint/PlasmidShape-hasSequenceLengthShape>
+        rdf:type  <http://www.w3.org/ns/shacl#PropertyShape>;
+        <http://www.w3.org/ns/shacl#datatype>
+                xsd:string;
+        <http://www.w3.org/ns/shacl#description>
+                "RNA Sequence Length";
+        <http://www.w3.org/ns/shacl#name>
+                "RNA Sequence Length";
+        <http://www.w3.org/ns/shacl#path>
+                idmp-sub:hasSequenceLength .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://id.hospital.accurids.com/3/1>
+        rdf:type                    <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/gender>  "Male" .
+
+<https://id.hospital.accurids.com/3/2>
+        rdf:type                    <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/gender>  "Female" .
+
+<https://id.hospital.accurids.com/3/3>
+        rdf:type                    <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/gender>  "Male" .
+
+<https://id.hospital.accurids.com/3/4>
+        rdf:type                    <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/gender>  "Female" .
+
+<https://id.hospital.accurids.com/3/5>
+        rdf:type                    <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/gender>  "Male" .
+
+<https://id.hospital.accurids.com/3/6>
+        rdf:type                    <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/gender>  "Female" .
+
+<https://id.hospital.accurids.com/3/7>
+        rdf:type                    <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/gender>  "Male" .
+
+<https://id.hospital.accurids.com/3/8>
+        rdf:type                    <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/gender>  "Female" .
+
+<https://id.hospital.accurids.com/3/9>
+        rdf:type                    <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/gender>  "Male" .
+
+<https://id.hospital.accurids.com/3/10>
+        rdf:type                    <https://id.accurids.com/fds/Patient>;
+        <http://schema.org/gender>  "Female" .

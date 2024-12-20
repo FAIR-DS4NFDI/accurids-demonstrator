@@ -1,0 +1,68 @@
+@prefix idmp-mprd: <https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11615-MedicinalProducts/> .
+@prefix idmp-sub:  <https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11238-Substances/> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+<https://id.accurids.com/fds/hasBarcode>
+        rdf:type    rdf:Property;
+        rdfs:label  "has Barcode" .
+
+<https://id.accurids.com/fds/hasClinicalTrial>
+        rdf:type    rdf:Property;
+        rdfs:label  "has Clinical Trial" .
+
+<https://id.accurids.com/fds/hasTrialSite>
+        rdf:type    rdf:Property;
+        rdfs:label  "has Trial Site" .
+
+<https://id.accurids.com/fds/hasClinicalTrialPID>
+        rdf:type    rdf:Property;
+        rdfs:label  "has Clinical Trial PID" .
+
+<https://id.accurids.com/fds/BiosampleType>
+        rdf:type    owl:Class;
+        rdfs:label  "Biosample Type" .
+
+<https://id.accurids.com/fds/hasBiosampleType>
+        rdf:type    rdf:Property;
+        rdfs:label  "has Biosample Type";
+        rdfs:range  <https://id.accurids.com/fds/BiosampleType> .
+
+<https://id.accurids.com/fds/HumanBiosample>
+        rdf:type         owl:Class;
+        rdfs:label       "Human Biosample";
+        rdfs:subClassOf  idmp-sub:Material .
+
+<https://id.accurids.com/fds/TrialStatus>
+        rdf:type    owl:Class;
+        rdfs:label  "Trial Status" .
+
+<https://id.accurids.com/fds/hasStatus>
+        rdf:type    rdf:Property;
+        rdfs:label  "has Status";
+        rdfs:range  <https://id.accurids.com/fds/TrialStatus> .
+
+<https://id.accurids.com/fds/TrialPhase>
+        rdf:type    owl:Class;
+        rdfs:label  "Trial Phase" .
+
+<https://id.accurids.com/fds/hasPhase>
+        rdf:type    rdf:Property;
+        rdfs:label  "has Phase";
+        rdfs:range  <https://id.accurids.com/fds/TrialPhase> .
+
+<https://id.accurids.com/fds/ClinicalTrial>
+        rdf:type                    owl:Class;
+        rdfs:label                  "Clinical Trial";
+        <http://schema.org/sameAs>  idmp-mprd:ClinicalTrial .
+
+<https://id.accurids.com/fds/hasPlasmidSize>
+        rdf:type    rdf:Property;
+        rdfs:label  "has Plasmid Size" .
+
+<https://id.accurids.com/fds/Plasmid>
+        rdf:type                    owl:Class;
+        rdfs:label                  "Plasmid";
+        <http://schema.org/sameAs>  idmp-sub:NucleicAcidSubstance .

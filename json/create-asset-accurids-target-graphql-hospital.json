@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+  },
+  "@id": "hospitalGraphql",
+  "properties": {
+    "name": "Target GraphQL endpoint",
+    "contenttype": "application/json"
+  },
+  "dataAddress": {
+    "type": "HttpData",
+    "name": "accurids-target-graphql",
+    "baseUrl": "https://pharma.accurids.com/graphql",
+    "proxyPath": "true",
+    "proxyMethod": "true",
+    "proxyBody": "true",
+    "proxyQueryParams": "true",
+    "authKey": "ApiKey",
+    "authCode": "{{APIKEY}}",
+    "method": "POST"
+  }
+}

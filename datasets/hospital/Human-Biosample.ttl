@@ -1,0 +1,20 @@
+@prefix cmns-dt: <https://www.omg.org/spec/Commons/DatesAndTimes/> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://id.hospital.accurids.com/5/1>
+        rdf:type                     <https://id.accurids.com/fds/HumanBiosample>;
+        dct:created                  "2024-12-03T11:15:47Z"^^xsd:dateTime;
+        dct:creator                  "Helge Krieg";
+        <https://id.accurids.com/fds/hasBarcode>
+                "100001";
+        <https://id.accurids.com/fds/hasBiosampleType>
+                <https://id.accurids.com/fds/HumanBiosampleType/4>;
+        <https://id.accurids.com/fds/hasClinicalTrial>
+                <https://id.pharma.accurids.com/1/75b75aa9740ef932ecf9f4bfa461a5a58ae7ee9d0ce6b38e9c03cbdf1c6cce57>;
+        <https://id.accurids.com/fds/hasPatient>
+                <https://id.hospital.accurids.com/3/4>;
+        <https://id.accurids.com/fds/hasTrialSite>
+                <https://spor.ema.europa.eu/omswi/#/organisations/ORG-100028229>;
+        cmns-dt:hasObservedDateTime  "2024-12-03T12:00:00.000Z" .

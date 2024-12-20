@@ -1,0 +1,22 @@
+@prefix cmns-loc:   <https://www.omg.org/spec/Commons/Locations/> .
+@prefix dct:        <http://purl.org/dc/terms/> .
+@prefix idmp-mprd:  <https://spec.pistoiaalliance.org/idmp/ontology/ISO/ISO11615-MedicinalProducts/> .
+@prefix lcc-3166-1: <https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:        <http://www.w3.org/2001/XMLSchema#> .
+
+<https://id.pharma.accurids.com/1/75b75aa9740ef932ecf9f4bfa461a5a58ae7ee9d0ce6b38e9c03cbdf1c6cce57>
+        rdf:type             <https://id.accurids.com/fds/ClinicalTrial>;
+        rdfs:label           "00001";
+        dct:created          "2024-12-02T10:13:52Z"^^xsd:dateTime;
+        dct:creator          "Helge Krieg";
+        <https://id.accurids.com/fds/hasPhase>
+                <https://id.accurids.com/fds/TrialPhase/2>;
+        <https://id.accurids.com/fds/hasStatus>
+                <https://id.accurids.com/fds/TrialStatus/1>;
+        <https://id.accurids.com/fds/hasTrialSite>
+                <https://spor.ema.europa.eu/omswi/#/organisations/ORG-100028229>;
+        idmp-mprd:hasTherapeuticIndication
+                "Rheumatoid Arthritis";
+        cmns-loc:hasCountry  lcc-3166-1:Germany .

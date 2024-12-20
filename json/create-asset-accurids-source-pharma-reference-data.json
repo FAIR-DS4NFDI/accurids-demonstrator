@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+  },
+  "@id": "pharmaReferenceData",
+  "properties": {
+    "name": "Source endpoint",
+    "contenttype": "application/json"
+  },
+  "dataAddress": {
+    "type": "HttpData",
+    "name": "accurids-source",
+    "baseUrl": "https://pharma.accurids.com/api/v1/datasets/11/content",
+    "proxyPath": "true",
+    "proxyMethod": "true",
+    "proxyBody": "true",
+    "proxyQueryParams": "true",
+    "authKey": "ApiKey",
+    "authCode": "{{APIKEY}}",
+    "method": "GET",
+    "header:Accept": "text/turtle"
+  }
+}
