@@ -18,12 +18,9 @@ repeat_after=0 # number of seconds to wait before running the next execution cyc
 ### Start consumer: java -Dedc.keystore=./certs/cert.pfx -Dedc.keystore.password=123456 -Dedc.fs.config=./config/consumer-configuration.properties -jar accurids-connector.jar
 ### Start provider: java -Dedc.keystore=./certs/cert.pfx -Dedc.keystore.password=123456 -Dedc.fs.config=./config/provider-configuration.properties -jar accurids-connector.jar
 
-### Create two files secret-hospital.txt and secret-pharma.txt that contain the Accurids API Keys
-
-
 ### setup logging
 timestamp=datetime.fromtimestamp(datetime.timestamp(datetime.now()), tz=None).strftime("%d-%m-%Y-%H-%M-%S")
-logfile=f"edc_demo_stepwise_{timestamp}.log"
+logfile=f"edc_demo.log"
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s', datefmt='%Y-%m-%dT%H:%M:%SZ', filename=logfile, filemode='w')
 
 stdout=colorlog.StreamHandler(stream=sys.stdout)
@@ -32,17 +29,10 @@ stdout.setFormatter(fmt)
 stdout.setLevel(logging.INFO)
 logging.getLogger('').addHandler(stdout)
 
-### READ API KEY
+### READ API KEYS FROM ENV VARIABLES
 
-key_file_1 = open("secret-pharma.txt", "r")
-accurids_apikey_pharma="".join(key_file_1.readlines()).strip()
-logging.debug(f"API KEY 1: {accurids_apikey_pharma}")
-key_file_1.close()
-
-key_file_2 = open("secret-hospital.txt", "r")
-accurids_apikey_hospital="".join(key_file_2.readlines()).strip()
-logging.debug(f"API KEY 2: {accurids_apikey_hospital}")
-key_file_2.close()
+accurids_apikey_pharma = os.environ['API_KEY_PHARMA']
+accurids_apikey_hospital = os.environ['API_KEY_HOSPITAL']
 
 def handle_exception(exc_type, exc_value, exc_traceback):
     if issubclass(exc_type, KeyboardInterrupt):

@@ -54,10 +54,20 @@ Install dependencies
 
 `python .\edc_demo.py`
 
-The script expects to find the API keys for the two Accurids instances in two files: `secret-hospital.txt` and `secret-pharma.txt`.
+The script expects to find the API keys for the two Accurids instances in two environment variables: `API_KEY_PHARMA` and `API_KEY_HOSPITAL`.
 
 Once the script is running, it first prepares the dataspace i.e., creating assets, roles, policies, and afterwards it continuously looks for changes in monitored datasets in Accurids. 
 As soon as a change is detected, the script executes a synchronization between the Accurids instances using the IDS prototcol.
+
+### Docker Container
+
+The Demonstrator setup of `Consumer`, `Provider` and the Python script is available as a Docker container in the `Packages` section of this code repository: [https://github.com/FAIR-DS4NFDI/accurids-demonstrator/pkgs/container/accurids-demonstrator](https://github.com/FAIR-DS4NFDI/accurids-demonstrator/pkgs/container/accurids-demonstrator).
+
+You can execute the container with following command:
+
+`docker run --env API_KEY_PHARMA=<key1> --env API_KEY_HOSPITAL=<key2> accurids-demonstrator`
+
+Replace `<key1>` and `<key2>` with the API keys of the Pharma instance and the Hospital instance.
 
 #### Example log from an execution
 
